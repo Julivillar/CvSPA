@@ -36,66 +36,71 @@ a:visited {
   text-decoration: none
 }
 
-li {
-  text-decoration: none;
-  list-style: none;
-  padding: 2px;
-  border: 1px solid pink;
-  border-radius: 1.6rem;
-  text-align: center;
+button {
+
+  border-radius: 8px;
+  
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: border-color 2s;
+
 }
 
-li:hover {
+button:hover {
   border-color: #646cff;
   background: aqua;
   transition: ease-in-out 0.5s;
+  color: #020425;
 }
 
+span{
+  font-weight: bolder;
+}
 
-
-
-
+/* ASIDE */
 
 .asideLinksLogoContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20rem;
-
 }
 
 nav {
   display: flex;
-  place-items: center;
   text-align: center;
-  padding: 0px;
+  padding: 20px;
   margin: 0px;
   flex-direction: column;
   background-color: #dda15e;
   height: 100%;
+  gap: .2rem;
 }
 
-nav > img{
+nav>img {
   padding: 5px;
-  max-width: 5rem;
+  max-width: 6rem;
 }
 
 
 
 
+/* HOME PAGE */
 
-
-.mainContentContainer {
+.mainHomeContentContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   place-items: center;
-  border: 1px solid;
+  
   place-content: center;
 }
 
-.aboutMeSection {
-  border: 1px solid;
+.aboutMeHomeSection {
+  
   max-width: 41.01rem;
 
 }
@@ -104,7 +109,7 @@ nav > img{
   display: flex;
 
   /*border-bottom: 1px solid;  separation between section */
-  border: 1px solid;
+  
 }
 
 .nameTitleSection>div>img {
@@ -113,33 +118,111 @@ nav > img{
   padding: 1rem;
 
 }
-
+/* only for Home atm */
 @media (width<650px) {
-  .asideLinksLogoContainer {
-    display: none;
-    flex-direction: row;
+
+  #root {
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+  .asideLinksLogoContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    background-color: #dda15e;
+    width: 100%;
+    place-content: space-evenly;
+  }
+
+
+
+
+
+}
+
+/* CV Page */
+.mainCVContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  
+  place-content: center;
+  
+}
+
+.personalDataAndOthersContainer{
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 100%;
+  place-content: space-evenly;
+
+}
+
+.topCards{
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 2%;
+  padding: 2rem;
+}
+
+.otherData{
+  border: none;
+}
+.workExperienceContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+.secondPart{
+  display: flex;
+  border-top: 2px solid;
+  border-radius: 2%;
+  
+}
+
+.formacionContainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sidePositioning{
+  padding-left: 20px;
+}
+
+.imgIcon{
+  max-width: 20px;
+}
+
+.emptyDiv{
+  border-right: 3px solid;
+  border-radius: 30%;
+}
+
+.competences>ul {
+    column-count: 2;
+}
+
+@media (width<860px) {
+
+  .competences>ul {
+    column-count: 1;
 }
 
 
 
 
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
- */
-
-
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */

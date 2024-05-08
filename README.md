@@ -10,3 +10,6 @@ Currently, two official plugins are available:
 =======
 # CvSPA
 >>>>>>> d06a339f080390a4c4a5484fab3b55dda43bf212
+
+# About this repo
+This repo is destined to be my portfolio of some kind, at least a CV about me, including projects and contacts
