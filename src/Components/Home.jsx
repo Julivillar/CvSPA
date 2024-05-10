@@ -4,7 +4,7 @@ export const Home = () => {
     <>
       <Aside/>
 
-      <main className='mainHomeContentContainer'>
+      <main className='mainHomeContentContainer mainContentContainer'>
         <section className='nameTitleSection'>
           <div>
             <h1>Julián Villar</h1>

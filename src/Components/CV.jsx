@@ -3,7 +3,7 @@ export const CV = () => {
     return (
         <>
             <Aside />
-            <main className="mainCVContentContainer">
+            <main className="mainCVContentContainer mainContentContainer">
                 <section className="personalDataAndOthersContainer">
                     <article className="personalData topCards">
                         <h3>Datos personales</h3>
